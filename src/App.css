@@ -120,5 +120,9 @@
   background-size: cover; /* Gambar akan sesuai dengan elemen dan menutupi elemen sepenuhnya */
   background-position: center center; /* Posisikan gambar di tengah */
   background-attachment: fixed;
-  backdrop-filter: blur(10px);
+}
+.dropdown-menu-item:hover {
+  background-color: #e6851e; /* Change to the desired hover background color */
+  color: #ffffff; /* Change to the desired hover text color */
+  cursor: pointer; /* Change to the desired cursor style */
 }
