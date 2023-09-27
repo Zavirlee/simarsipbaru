@@ -14,6 +14,8 @@ import { useEffect } from 'react';
 import { Update } from './pages/updatearsip';
 import { UpdateUser } from './pages/updateuser';
 import { Profile } from './pages/profile';
+import { Pimpinan } from './pages/pimpinan';
+import Layoutpim from './component/layoutpim'
 
 // import { useNavigate } from 'react-router-dom';
 // import { useEffect } from 'react';
@@ -36,8 +38,6 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/dashboard' element={<Layout/>}>
             <Route index element={<Dashboard/>} />
-            {/* <Route path='/dashboard/detail' element={<Detail/>}/>
-            <Route path='dashboard/detail/update' element={<Update/>}/> */}
           </Route>
           <Route path='/tambah' element={<Layout/>}>
             <Route index element={<Tambah/>} />
@@ -52,7 +52,6 @@ function App() {
           <Route path='/updateuser' element={<Layout/>}>
             <Route index element={<UpdateUser/>} />
           </Route>
-          
           <Route path='/user' element={<Layout/>}>
             <Route index element={<User/>} />
             <Route path='/user/tambahuser' element={<TambahUser/>}/>
@@ -62,6 +61,11 @@ function App() {
           </Route>
           <Route path='/profile' element={<Layout/>}>
             <Route index element={<Profile/>} />
+          </Route>
+          <Route path='/pimpinan' element={<Layoutpim/>}>
+            <Route index element={<Pimpinan/>} />
+            <Route path='/pimpinan/tabel' element={<Tabel/>}/>
+            <Route path='/pimpinan/category' element={<Category/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

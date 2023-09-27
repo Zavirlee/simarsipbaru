@@ -88,6 +88,7 @@
 }
 .content{
   background-color: #E3EAFC;
+  
 }
 .view{
   height: 800px;
@@ -109,4 +110,15 @@
 }
 .logopop{
   width: 50px;
+}
+#cariarsip{
+  /* background-image: url(./images/bg6.jpg) !important; */
+  background-color: #38393c96;
+}
+#pimpinan{
+  background-image: url(./images/bg4.jpg) !important;
+  background-size: cover; /* Gambar akan sesuai dengan elemen dan menutupi elemen sepenuhnya */
+  background-position: center center; /* Posisikan gambar di tengah */
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
 }

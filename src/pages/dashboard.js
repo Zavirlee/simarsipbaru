@@ -6,6 +6,7 @@ import { BsShop } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { Tabel } from './tabel';
 import { useEffect } from 'react';
+import { SearchTable } from '../component/search';
 
 export const Dashboard = () => {
   const navigate = useNavigate();
@@ -74,8 +75,17 @@ export const Dashboard = () => {
             </div>
           </div>
         </div>
-        <Tabel className="col-12 "/>
-      </div>
+        <div className='row d-flex justify-content-center align-items-center  '>
+        <div id="tabel" className="col-12 ">
+        <Tabel />
+        </div>
+        <div id="cariarsip" className='col-12 col-md-8 d-flex justify-content-center p-5 rounded h-100 d-none '>
+          {/* Menempatkan elemen pencarian tabel di tengah */}
+          <SearchTable />
+        </div>
+
+        </div>
+    </div>
     </div>
   );
 };
